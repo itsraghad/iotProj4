@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+<head>
+
+  <meta charest="UTF-8">
+    <title>control</title>
+    <link rel="stylesheet" href="2/styleee.css">
+    <script src="ja.js"></script>
+
+    <style>
+   .slidercontainer{
+  width: 100%;
+}
+.slider {
+  width: 50%;
+  height: 25px;
+  background:#D3D3D3;
+  color: blue;
+  outline: none;
+}
+
+.btn{
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em;
+  cursor: pointer; 
+}
+.btnstyle{
+  margin: .2em 15% 2em 15%;
+  color:white;
+  border:2px solid rgb(70, 70, 224) ;
+  background-color: rgb(70, 70, 224);
+  border-radius: 10%;
+}
+.btnstyle:hover{
+  background-color:rgb(25, 25, 124);
+}
+
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+ 
+}
+
+h1{
+    color: black;
+}
+.thecenter{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.button{
+  height: 50px;
+  width: 200px;
+  border-radius: 30px;
+}
+.out{
+  position: relative;
+  margin: 0 50px;
+  background: white;
+}
+
+
+.out button{
+  background:rgb(70, 70, 224);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  z-index:8 ;
+  letter-spacing: .5px;
+  cursor: pointer;
+}
+.button button{
+  height: 60px;
+  width: 210px;
+  border-radius: 50px;
+}
+
+
+.out button:hover{
+color: rgb(25, 25, 124);
+}
+</style>
+
+</head>
+<body>
+  <header class="bstyle">     
+  </header>
+</html>
+
+  <section>
+        <div class="slidercontainer">
+            <h3>محرك 1</h3> <input type="range" min="0" max="180" value="50" class="slider" id="Arange">
+            <p>  Value: <span id="A"></span></p>
+          </div>
+          
+          <script>
+            var ASliderRange = document.getElementById("Arange");
+                var Aoutput = document.getElementById("A");
+                Aoutput.innerHTML = ASliderRange.value;
+                ASliderRange.oninput = function() {
+                  Aoutput.innerHTML = this.value;
+                }
+            </script>
+            
+        <div class="slidercontainer">
+          <h3>محرك 2</h3>
+          <input type="range" min="0" max="180" value="50" class="slider" id="Brange">
+          <p>  Value: <span id="B"></span></p>
+          </div>
+          
+          <script>
+            var BSliderRange = document.getElementById("Brange");
+                var Boutput = document.getElementById("B");
+                Boutput.innerHTML = BSliderRange.value;
+                BSliderRange.oninput = function() {
+                  Boutput.innerHTML = this.value;
+                }
+            </script>
+  
+      <div class="slidercontainer">
+          <h3>محرك 3</h3>
+          <input type="range" min="0" max="180" value="50" class="slider" id="Crange">
+          <p>  Value: <span id="C"></span></p>
+      </div>
+      
+      <script>
+        var CSliderRange = document.getElementById("Crange");
+            var Coutput = document.getElementById("C");
+            Coutput.innerHTML = CSliderRange.value;
+            CSliderRange.oninput = function() {
+              Coutput.innerHTML = this.value;
+            }
+        </script>
+      <div class="slidercontainer">
+          <h3>محرك 4</h3>
+          <input type="range" min="0" max="180" value="50" class="slider" id="Drange">
+          <p>  Value: <span id="D"></span></p>
+      </div>
+      
+      <script>
+        var DSliderRange = document.getElementById("Drange");
+            var Doutput = document.getElementById("D");
+            Doutput.innerHTML = DSliderRange.value;
+            DSliderRange.oninput = function() {
+              Doutput.innerHTML = this.value;
+            }
+        </script>
+      <div class="slidercontainer">
+          <h3>محرك 5 </h3>
+          <input type="range" min="0" max="180" value="50" class="slider" id="Erange">
+          <p>  Value: <span id="E"></span></p>
+      </div>
+      
+      <script>
+        var ESliderRange = document.getElementById("Erange");
+            var Eoutput = document.getElementById("E");
+            Eoutput.innerHTML = ESliderRange.value;
+            ESliderRange.oninput = function() {
+              Eoutput.innerHTML = this.value;
+            }
+        </script>
+      
+      <div class="slidercontainer">
+          <h3>محرك 6</h3>
+          <input type="range" min="0" max="180" value="50" class="slider" id="Frange">
+          <p>  Value: <span id="F"></span></p>
+          </div>
+          
+          <script>
+            var FSliderRange = document.getElementById("Frange");
+                var Foutput = document.getElementById("F");
+                Foutput.innerHTML = FSliderRange.value;
+                FSliderRange.oninput = function() {
+                  Foutput.innerHTML = this.value;
+                }
+            </script>
+         
+  
+       
+
+    <button type="button" class="btn btnstyle">حفظ</button>
+    <button type="button" class="btn btnstyle">تشغيل</button>
+
+  </section>
+  
+<h1>الاتجاهات   </h1>
+
+    <div class="thecenter">
+   
+        <span></span>
+          
+          <table style="width:40%">
+           <tr>
+             <th>  </th>
+             <th>  </th> 
+             <th>  </th>
+           </tr>
+                <tr><td></td>
+             <td>  <div class="thecenter">
+               <div class="out button">
+               <button>upward</button>
+               <span></span>
+               <span></span>
+               </div>        </td>
+               <td>   </td>
+                 </tr> </div>
+         
+                 <br>
+         
+               <tr>
+             <td></td>  <div class="out button">
+               <button>left</button>
+               <span></span>
+               <span></span>
+               </div>
+              </div>
+             <br>
+             <br> <br> <br> <br> <br>
+       
+             
+             </td>
+                <td> 
+                 <br><br><br><br>
+       
+                 
+                 <div class="out button">
+                   <button>stop</button>
+                   <span></span>
+                   <span></span>
+                   </div>
+                   </td>
+       
+                <td>
+                  
+                 <br>
+                  <br>
+                  <br>
+                  <br>
+                 <div class="out button">
+                 <button>right</button>
+                 <span></span>
+                 <span></span>
+                 </div>  
+                  </td>
+                </tr>  </div>
+         
+                 
+                 
+                 <tr>
+       
+       
+                 <td></td>
+             <td>  
+               <br><br><br><br>
+               
+               <div class="out button">
+               <button>backward</button>
+               <span></span>
+               <span></span>
+               </div>
+                 <td> 
+                </td>
+            </tr>
+   
+
+            <script>
+              window.watsonAssistantChatOptions = {
+                  integrationID: "a3576d26-7706-4328-b387-e4bd1633d89c", 
+                  region: "eu-gb", 
+                  serviceInstanceID: "bec9d96a-99c1-4a54-bb5e-c538f5de7d91", 
+                  onLoad: function(instance) { instance.render(); }
+                };
+              setTimeout(function(){
+                const t=document.createElement('script');
+                t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                document.head.appendChild(t);
+              });
+            </script>
+
+    </body>
+    </html>
+
+  <footer>
+
+  </footer>
+
+ 
